@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lab 24 - challenge 01"""
+"""Lab 24 - challenge 01""" 
 
 farms = [{"name": "NE Farm", "agriculture": ["sheep", "cows", "pigs", "chickens", "llamas", "cats"]},
          {"name": "W Farm", "agriculture": ["pigs", "chickens", "llamas"]},
