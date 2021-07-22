@@ -18,10 +18,13 @@ API = "https://api.magicthegathering.io/v1/" # this will never change
 def main():
     """Run time code"""
 
-    setcode = input("What is the code of the set you are trying to lookup (see mtgsets.index for a list of codes)? ").lower()   # collect user input for MTG card set to lookup
+    # collect user input for MTG card set to lookup
+    setcode = input("What is the code of the set you are trying to lookup\
+(see mtgsets.index for a list of codes)? ").lower()
 
     # create resp, which is our request object
-    resp = requests.get(f"{API}cards?set={setcode}")   # this "f" string reads: API + "cards/" + setcode
+    resp = requests.get(f"{API}cards?set={setcode}")
+    # this "f" string reads: API + "cards/" + setcode
 
     # the .json() method will dump a JSON string into Pythonic data structures. COOL!
     # This is much easier than using the urllib.request library
